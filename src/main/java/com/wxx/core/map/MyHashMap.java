@@ -1,13 +1,9 @@
 package com.wxx.core.map;
 
 import java.util.HashMap;
-import java.util.Hashtable;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
-
-import com.wxx.runnable.MyRunnable;
-import com.wxx.runnable.MyRunnable2;
 
 public class MyHashMap {
 	public static final int   MAX_VALUE = 0x7fffffff;
