@@ -152,7 +152,7 @@
   * 最坏时间: `O(n^2)`
   * 平均时间: `O(nlog(n))`
 
-![Alt text](/images/quicksort.gif?raw=true "Quicksort")
+![Alt text](./images/quicksort.gif?raw=true "Quicksort")
 
 #### 归并排序
 * 归并排序是典型的分治算法，它不断地将某个数组分为两个部分，分别对左子数组与右子数组进行排序，然后将两个数组合并为新的有序数组。
@@ -162,7 +162,7 @@
   * 最坏时间: `O(nlog(n))`
   * 平均时间: `O(nlog(n))`
 
-![Alt text](/images/mergesort.gif?raw=true "Mergesort")
+![Alt text](./images/mergesort.gif?raw=true "Mergesort")
 
 #### 桶排序
 * 桶排序将数组分到有限数量的桶子里。每个桶子再个别排序（有可能再使用别的排序算法或是以递归方式继续使用桶排序进行排序）。
@@ -172,7 +172,7 @@
   * 平均时间:`Θ(n + k)`
 
 
-![Alt text](/images/bucketsort.png?raw=true "Bucket Sort")
+![Alt text](./images/bucketsort.png?raw=true "Bucket Sort")
 
 #### 基数排序
 * 基数排序类似于桶排序，将数组分割到有限数目的桶中；不过其在分割之后并没有让每个桶单独地进行排序，而是直接进行了合并操作。
@@ -187,7 +187,7 @@
 * 深度优先算法是一种优先遍历子节点而不是回溯的算法。
 * 时间复杂度: `O(|V| + |E|)`
 
-![Alt text](/images/dfsbfs.gif?raw=true "DFS / BFS Traversal")
+![Alt text](./images/dfsbfs.gif?raw=true "DFS / BFS Traversal")
 
 #### 广度优先搜索
 * 广度优先搜索是优先遍历邻居节点而不是子节点的图遍历算法。
