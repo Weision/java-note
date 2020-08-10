@@ -1,4 +1,4 @@
-package com.wxx;
+package com.weison;
 
 import static org.junit.Assert.assertTrue;
 
