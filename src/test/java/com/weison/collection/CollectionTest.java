@@ -1,6 +1,6 @@
 package com.weison.collection;
 
-import com.back.domain.Student;
+import com.weison.domain.Student;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
