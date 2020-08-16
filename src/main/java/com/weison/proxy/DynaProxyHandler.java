@@ -1,15 +1,14 @@
 package com.weison.proxy;
 
-import com.sun.istack.internal.logging.Logger;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.util.Date;
+import java.util.logging.Logger;
 
 public class DynaProxyHandler implements InvocationHandler {
 
-    private Logger logger = Logger.getLogger(DynaProxyHandler.class);  
-
+    private Logger logger = Logger.getLogger("DynaProxyHandler");
     private Object target;//被代理对象
 
     public void setTarget(Object target) {

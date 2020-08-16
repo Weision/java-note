@@ -1,11 +1,11 @@
 package com.weison.proxy;
 
-import com.sun.istack.internal.logging.Logger;
+import java.util.logging.Logger;
 
 public class PersonProxy implements IPerson {
 	private IPerson person;
 
-	private Logger logger = Logger.getLogger(PersonProxy.class);
+	private java.util.logging.Logger logger = Logger.getLogger("PersonProxy");
 
 	public PersonProxy(IPerson person) {
 
