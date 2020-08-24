@@ -1,8 +1,9 @@
 package com.weison.collection;
 
 import com.weison.domain.Student;
-import org.junit.BeforeClass;
-import org.junit.Test;
+
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
 
 import java.util.*;
 
@@ -10,7 +11,7 @@ public class MapTest {
 
     private static Map<String, Student> map = new HashMap<>();
 
-    @BeforeClass
+    @BeforeAll
     public static void beforeClass() {
         Student student1 = new Student();
         Student student2 = new Student();
@@ -32,7 +33,6 @@ public class MapTest {
         map.put("student2", student2);
         map.put("student3", student3);
     }
-
 
     @Test
     public void traversalByKeySet() {

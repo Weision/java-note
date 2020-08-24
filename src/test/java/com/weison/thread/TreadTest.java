@@ -1,15 +1,12 @@
 package com.weison.thread;
 
-import org.junit.Ignore;
-import org.junit.Test;
-
 import java.util.concurrent.*;
+
+import org.junit.jupiter.api.Test;
 
 public class TreadTest {
 
-
     @Test
-    @Ignore
     public void threadTest() throws InterruptedException {
         Thread thread = new Thread(() -> {
             try {
@@ -24,9 +21,7 @@ public class TreadTest {
         TimeUnit.SECONDS.sleep(30);
     }
 
-
     @Test
-    @Ignore
     public void newCachedThreadPool() throws InterruptedException {
         ExecutorService executorService = Executors.newCachedThreadPool();
         for (int i = 0; i < 5; i++) {
@@ -48,7 +43,6 @@ public class TreadTest {
     }
 
     @Test
-    @Ignore
     public void newFixedThreadPool() throws InterruptedException {
         ExecutorService fixedThreadPool = Executors.newFixedThreadPool(4);
         for (int i = 0; i < 5; i++) {
@@ -69,7 +63,6 @@ public class TreadTest {
     }
 
     @Test
-    @Ignore
     public void newScheduledThreadPool() throws InterruptedException {
         ScheduledExecutorService scheduledThreadPool = Executors.newScheduledThreadPool(5);
         System.out.println("before:" + System.currentTimeMillis() / 1000);
@@ -93,9 +86,7 @@ public class TreadTest {
         TimeUnit.HOURS.sleep(1);
     }
 
-
     @Test
-    @Ignore
     public void newSingleThreadExecutor() throws InterruptedException {
         ExecutorService singleThreadExecutor = Executors.newSingleThreadExecutor();
         for (int i = 0; i < 10; i++) {
@@ -116,7 +107,6 @@ public class TreadTest {
     }
 
     @Test
-    @Ignore
     public void countDownLatchTest() throws InterruptedException {
         // 改为3 查看阻塞效果
         CountDownLatch countDownLatch = new CountDownLatch(2);
@@ -144,9 +134,8 @@ public class TreadTest {
     }
 
     @Test
-    @Ignore
     public void cyclicBarrierTest() throws InterruptedException {
-        //起跑线
+        // 起跑线
         CyclicBarrier cyclicBarrier1 = new CyclicBarrier(3);
         CyclicBarrier cyclicBarrier2 = new CyclicBarrier(2);
 
@@ -169,18 +158,17 @@ public class TreadTest {
 
         thread1.start();
         thread2.start();
-        //放开thread3看效果
-        //thread3.start();
+        // 放开thread3看效果
+        // thread3.start();
         TimeUnit.HOURS.sleep(1);
         System.out.println("---------------------");
     }
 
     @Test
-    @Ignore
     public void semaphoreTest() throws InterruptedException {
-        //synchronized像是一个容量为1的Semaphore
-        //semaphore1.acquire(); 获取许可
-        //semaphore1.release(); 释放
+        // synchronized像是一个容量为1的Semaphore
+        // semaphore1.acquire(); 获取许可
+        // semaphore1.release(); 释放
         Semaphore semaphore1 = new Semaphore(1);
         Semaphore semaphore2 = new Semaphore(1);
         Thread thread1 = new Thread(() -> {
