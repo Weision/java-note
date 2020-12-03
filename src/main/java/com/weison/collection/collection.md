@@ -12,10 +12,13 @@
 3. LinkedHashSet
 
 ## Queue
-1. ArrayListBlockingQueue
+1. ArrayBlockingQueue
 2. LinkedBlockingQueue
-3. LinkedBlockingQueue
-3. LinkedBlockingQueue
+3. LinkedTransferQueue
+4. LinkedBlockingDeque
+5. PriorityBlockingQueue
+6. DelayQueue
+7. SynchronousQueue
 
 ## Map
 1. HashMap
